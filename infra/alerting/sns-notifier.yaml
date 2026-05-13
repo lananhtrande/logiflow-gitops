@@ -4,7 +4,7 @@ metadata:
   name: sns-notifier
   namespace: logiflow
   annotations:
-    eks.amazonaws.com/role-arn: "arn:aws:iam::686699774218:role/LogiFlowWorkerRoleLA"
+    eks.amazonaws.com/role-arn: "arn:aws:iam::686699774218:role/LogiFlowWorkerRoleLA2"
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -33,7 +33,7 @@ spec:
       labels:
         app: sns-notifier
     spec:
-      serviceAccountName: event-exporter
+      serviceAccountName: sns-notifier
       initContainers:
         - name: install-boto3
           image: python:3.11-slim
