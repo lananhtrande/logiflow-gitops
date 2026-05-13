@@ -24,8 +24,8 @@ spec:
       authenticationRef:
         name: worker-sqs-auth
       metadata:
-        queueURL: ${QUEUE_URL}
+        queueURL: "https://queue.amazonaws.com/686699774218/logiflow-shipments"
         awsRegion: "us-east-1"
-        awsAccountID: ${ACCOUNT_ID}
+        awsAccountID: "686699774218"
         queueLength: "10"
         scaleOnInFlight: "true"

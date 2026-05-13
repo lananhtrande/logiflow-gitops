@@ -4,7 +4,7 @@ metadata:
   name: sns-notifier-config
   namespace: logiflow
 data:
-  sns_topic_arn: ${TOPIC_ARN}
+  sns_topic_arn: "arn:aws:sns:us-east-1:686699774218:logiflow-scaling-alerts"
   aws_region: "us-east-1"
   cluster_name: "logiflow-eks"
 ---

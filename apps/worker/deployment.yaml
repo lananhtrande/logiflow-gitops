@@ -68,5 +68,5 @@ metadata:
   name: worker-config
   namespace: logiflow
 data:
-  sqs_queue_url: ${QUEUE_URL}
+  sqs_queue_url: "https://queue.amazonaws.com/686699774218/logiflow-shipments"
   aws_region: "us-east-1"
