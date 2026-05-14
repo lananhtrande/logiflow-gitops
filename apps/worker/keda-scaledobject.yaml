@@ -10,6 +10,8 @@ spec:
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
+  annotations:
+    argocd.argoproj.io/tracking-id: logiflow-worker:keda.sh/ScaledObject:logiflow/worker
   name: worker
   namespace: logiflow
 spec:
